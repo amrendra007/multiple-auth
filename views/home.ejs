@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+
+<div class="loginBox">
+    <div class="title">
+        Welcome back !
+    </div>
+<a href="/auth/facebook">
+    <input type="button" value="Continue using Facebook" class="fbButton">
+</a>
+    <p class="para">OR</p>
+    
+    <form method = "POST" action="/login">
+        <div>
+            <span>USERNAME</span>   
+            <input type="text"  name='username'>
+        </div>
+        <div>
+            <span>PASSWORD</span>         
+            <input type="password"  name='password'>
+        </div>
+        <button class="submit">Login</button>
+    </form>
+
+    <div class="register">
+        Need an account? <a href="/register">Register</a> 
+    </div>
+</div>
+
+<% include ./partials/footer %>
+
+
+
+

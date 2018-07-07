@@ -1,0 +1,14 @@
+<div>
+    <h1>this is secret page</h1>
+    <h3>hello local user - 
+        <%= localUser %>
+    </h3>
+</div>
+
+
+<div>
+    <img src="<%= fbUser.url %>" >
+        <h3>hello fb user - <%= fbUser.username %></h3>
+</div>
+
+<a href="/logout"><button>logout</button></a>

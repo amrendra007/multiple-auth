@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<div class="loginBox">
+    <form method="POST" action="/register">
+        <div class="title">
+            Create an account
+        </div>
+        <div>
+            <span>USERNAME</span>
+            <input type="text" name='username'>
+        </div>
+        <div>
+            <span>PASSWORD</span>
+            <input type="password" name='password'>
+        </div>
+        <div>
+            <span>CONFIRM PASSWORD</span>
+            <input type="password" name='matchpassword'>
+        </div>
+        <button class="submit">Continue</button>
+    </form>
+
+    <div class="register">
+        <a href="/">Already have an account?</a>
+    </div>
+</div>
+
+<% include ./partials/footer %>
